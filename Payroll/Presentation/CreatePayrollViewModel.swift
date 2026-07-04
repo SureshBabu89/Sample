@@ -37,10 +37,10 @@ final class CreatePayrollViewModel {
           }
 
           if wages == 0 {
-              employeeCountError = "Employee count is required."
+              employeeCountError = "Employee wages is required."
               isValid = false
           } else if Double(wages) == nil {
-              employeeCountError = "Enter a valid number."
+              employeeCountError = "Enter a wages number."
               isValid = false
           }
 

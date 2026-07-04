@@ -12,6 +12,10 @@ final class PayrollListViewModel {
 
     var payrolls: [Payroll] = []
 
+    var payrollCount: Int {
+        payrolls.count
+    }
+
     private let fetchPayrollUseCase: FetchPayrollUseCase
 
     init(fetchPayrollUseCase: FetchPayrollUseCase) {
